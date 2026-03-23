@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+  color: #fff;
+}
+
+body {
+  font-family: sans-serif; /* Sets a basic font */
+  line-height: 1.5; /* Improves readability */
+}
+body{
+  background-color:#111;
+}
