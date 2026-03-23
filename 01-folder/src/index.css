@@ -3,12 +3,52 @@
   margin: 0;
   box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
   color: #fff;
+  
 }
 
 body {
   font-family: sans-serif; /* Sets a basic font */
   line-height: 1.5; /* Improves readability */
-}
-body{
   background-color:#111;
+  display: inline;
+}
+
+.parent{
+  /* border: 2px solid #fff; */
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  object-fit: cover;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.Card{
+  width: 350px;
+  padding: 20px;
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #222;
+}
+.nav{
+  background-color: rgb(227, 106, 238);
+  border: 1px solid #fff;
+  padding: 20px;
+  margin: 5px;
+}
+.Card p{
+  margin: 20px 0;
+}
+.Card button{
+    padding: 10px 20px;
+    background-color: white;
+    color: #111;
+    border-radius: 5px;
+    border: none;
+}
+.Card img{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
 }
