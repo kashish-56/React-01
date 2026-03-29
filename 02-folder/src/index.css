@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+  color: #111;
+}
+.body{
+   font-family: sans-serif; /* Sets a basic font */
+  line-height: 1.5; /* Improves readability */
+  background-color:#fff;
+  display: inline;
+}
+.parent{
+  padding: 30px;
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+ }
+ .card{
+  height: 350px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 30px;
+  color: #111;
+  padding : 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ .card .top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+ }
+
+.top img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    padding : 2px;
+}
+.top button{
+    display:flex;
+    align-items: center;
+    border: 1px solid #dadada;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-size: 11px;
+    gap: 3px;
+    background-color: transparent;
+    color:#b1b1b1;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+}
+
+.center h3{
+    font-size: 17px;
+    font-weight: 500px;
+}
+.center h3 span{
+    font-size: 10px;
+    color: #8b8b8b;
+    font-weight: 300px;
+}
+.center h2{
+    font-size: 20px;
+    font-weight: 500px; 
+}
+
+.center .tag{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+.center .tag h4{
+    font-size: 10px;
+    color: #111;
+    font-weight: 500px;
+    border: 1px solid #dadada;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 2px solid #d7d7d7ce;
+}
+.bottom button{
+    display:flex;
+    align-items: center;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    gap: 3px;
+    background-color: black;
+    color:#fff;
+    font-weight: 600px;
+}
+.bottom h3{
+    font-size: 17px;
+    color: black;
+    font-weight: 300px;
+}
+.bottom p{
+    font-size: 10px;
+    color: #8b8b8b;
+    font-weight: 300px;
+}

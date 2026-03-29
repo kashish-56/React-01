@@ -23,6 +23,7 @@ body {
   gap: 20px;
 }
 .Card{
+  height: 400px;
   width: 350px;
   padding: 20px;
   border: 1px solid #fff;
