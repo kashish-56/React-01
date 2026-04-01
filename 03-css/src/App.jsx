@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from './components/Button'
-import Header from './components/Header'  
+import Header from './components/Header/Header.jsx'
+import Button from './components/Button/Button.jsx' 
 
 const App = () => {
   return (
