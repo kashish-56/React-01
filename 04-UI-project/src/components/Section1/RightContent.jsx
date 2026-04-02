@@ -5,7 +5,7 @@ const RightContent = (props) => {
   return (
     <div id='right' className='h-full w-2/3 flex flex-nowrap gap-6 overflow-x-auto rounded-4xl'>
       {props.users.map(function(elem, index) {
-        return <RightCard key={index} id = {index} img={elem.img} intro={elem.intro} tag={elem.tag} />
+        return <RightCard key={index} id = {index} img={elem.img} intro={elem.intro} tag={elem.tag} color={elem.color}   />
       })}
     </div>
   )
