@@ -6,12 +6,17 @@ const App = () => {
   const [num, setNum] = useState({user: 'Radha', age: 25})
   const [num2, setNum2] = useState([10,20,30])
   const [num3, setNum3] = useState('Hare Krishna! ')
+  const [num4, setNum4] = useState(30)
 
   const btnClicked = () => {
-      const newNum = {...num};
-      newNum.age = 26;
-      newNum.user = 'Krishna';
-      setNum(newNum);
+      // const newNum = {...num};
+      // newNum.age = 26;
+      // newNum.user = 'Krishna';
+      // setNum(newNum);
+      setNum((prev) =>({
+        ...prev,
+        age: 26,
+        user: 'Krishna'}))
   }
   
   const btnClicked2 = () => {
@@ -25,6 +30,11 @@ const App = () => {
   const btnClicked3 = () => {
       setNum3(() => 'Hare Krishna Hari Bol !');
   }
+  const btnClicked4 =()=>{
+      setNum4(prev =>(prev + 1));
+      setNum4(prev =>(prev + 1));
+      setNum4(prev =>(prev + 1));
+  }
 
   return (
     <div>
@@ -33,6 +43,8 @@ const App = () => {
       <h2>{num2.join(', ')}</h2>
       <button onClick={btnClicked2}>touch me</button>
       <button onClick={btnClicked3}>{num3}</button>
+      <h2>{num4}</h2> 
+      <button onClick={btnClicked4}>Increment</button>
     </div>
   )
 }
