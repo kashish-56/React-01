@@ -3,17 +3,14 @@ import { useState } from 'react'
 
 const App = () => {
 
-  const [a, setA] = useState(30)
-  const [user, setuser] = useState('Radha')
+  const [num, setNum] = useState(0)
 
   return (
     <div>
-      <h1>Username is {user}</h1>
-      <h2>Value of a is {a}</h2>
-      <button onClick={() =>{
-        setA(a+10)
-        setuser('Krishna')
-        }} >Click</button>
+      <h1>{num}</h1>
+      <button onClick={()=>{setNum(num+1)}}>increase</button>
+      <button onClick={()=>{setNum(num-1)}}>decrease</button>
+      <button onClick={()=>{setNum(0)}}>reset</button>
     </div>
   )
 }
