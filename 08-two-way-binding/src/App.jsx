@@ -5,8 +5,8 @@ const App = () => {
 
   const formHandler = (e) => {
     e.preventDefault()
-    console.log('Form Submitted');
-    
+    console.log('Form Submitted by', text);
+    setText('')
   }
   return (
     <div>
