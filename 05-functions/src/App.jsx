@@ -3,9 +3,11 @@ import React from 'react'
 const App = () => {
 
   return (
-    <div>
+    <div className="container" onScroll={(e) =>{
+      console.log(e.target.scrollTop);   
+    }}>
       <div id='page1'>
-        <input type="text" placeholder="Type something..." onChange={(e) => console.log(e.target.value)}/>
+        <input id="text-input" type="text" placeholder="Type something..." onChange={(e) => console.log(e.target.value)}/>
       <button className="btn btn-primary" onClick={()=>{
         console.log('Button Clicked');
         
@@ -16,8 +18,8 @@ const App = () => {
         
       }}>Login</button>
       </div>
-      <div id='page2' onMouseMove={()=>{
-        console.log('radhe radhe......');
+      <div id='page2' onMouseMove={(e)=>{
+        console.log(e.clientX);
         
       }}></div>
       <div id='page3'></div>
